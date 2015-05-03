@@ -23,20 +23,30 @@
 		font-size: 18px;
 	}
 	.instruction-container__title1, .instruction-container__title2, .instruction-fill-form {
-		color:#a94442;
+		color: #a94442;
 		font-weight: bold;
 	}
 	.btn-sign-up {
-		margin-right:20px;
+		margin-right: 20px;
 	}
-	.coupon-container span {
-		font-size:18px;
-		color:#a94442;
+	.coupon-container {
+		margin-top: 20px;
+	}
+	.coupon-container__instruction {
+		font-size: 20px;
+		color: #a94442;
+	}
+	.coupon-container__coupon {
+		font-size: 20px;
+		font-weight: normal;
+	}
+	.coupon-container__redeem-instruction {
+		margin-top: 30px;
 	}
 	</style>
 </head>
 <body>
-	<div class="body-container">
+	<div class="body-container container-fluid">
 		<!-- logo-->
 		<div class="logo-container row">
 			<div class="col-xs-6">
@@ -53,10 +63,6 @@
 			<!-- left image and description container -->
 			<div class="col-xs-5">
 				<img class="main-container__img" src="http://ecx.images-amazon.com/images/I/81-8WA-cEOL._SX425_.jpg">
-				<p></p>
-				<p>
-					G & F Micro form nitrile coating garden gloves offers 60% Nylon shell, 40% Nitrile coating, 3/4 coating covering most of the hand,Ultra Cool and Very Comfortable to Wear, Breathable Coating Keeps Hands Cool and Dry. Fits like second skin, wear like leather.
-				</p>
 			</div>
 
 			<!-- right coupon container-->
@@ -64,12 +70,14 @@
 				<div class="coupon-container">
 					<div>
             <p> Congratulations, you've successfully signed up for this special offer! </p>
-            <span> Here is your coupon code: </span>
-            <button class="btn btn-primary" type="button"> abcdefg </button>
+            <span class="coupon-container__instruction"> Here is your coupon code: </span>
+            <span class="label label-primary coupon-container__coupon">94JY-896BEY-P8SR4J</span>
           </div>
           <div>
-          <p>Redeem at below Amazon Product page:</p>
-          <a href="http://www.amazon.com/garden-gloves-Nitrile-coating-texture/dp/B0007YZ42I/ref=sr_1_7?m=AE3L8DO5YKOR4&s=merchant-items&ie=UTF8&qid=1430517713&sr=1-7"> This is the link</a>
+          	<div class="coupon-container__redeem-instruction">
+              <p>Please redeem at below Amazon Product page:</p>
+            </div>
+          <a href="http://www.amazon.com/garden-gloves-Nitrile-coating-texture/dp/B0007YZ42I/ref=sr_1_7?m=AE3L8DO5YKOR4&s=merchant-items&ie=UTF8&qid=1430517713&sr=1-7"> http://www.amazon.com/garden-gloves-Nitrile-coating-texture/dp/B0007YZ42I/ref=sr_1_7?m=AE3L8DO5YKOR4&s=merchant-items&ie=UTF8&qid=1430517713&sr=1-7 </a>
        </div>
          
 				</div>
