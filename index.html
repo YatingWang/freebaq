@@ -16,13 +16,30 @@
 	.main-container__img {
 		width: 100%;
 	}
+	.footer-container{
+		position: relative;
+		margin-top: 40px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		font-size: 12px;
+		line-height: 1.5;
+		color: #777;
+		border-top: 1px solid #eee;
+	}
+	.footer-container__img{
+		width: 50px;
+		height:25px;
+	}
 	.body-container p {
 		font-size: 20px;
 	}
-	.body-container li, .instruction-container .instruction-container__subtitle2 {
+	.body-container li, .description-container .description-container__subtitle2 {
 		font-size: 18px;
 	}
-	.instruction-container__title1, .instruction-container__title2, .instruction-fill-form {
+	.body-container li{
+		margin: 10px;
+	}
+	.description-container__title1, .description-container__title2, .instruction-fill-form {
 		color:#a94442;
 		font-weight: bold;
 	}
@@ -32,6 +49,17 @@
 	/* for google form label */
   .ss-q-item-label {
   	display: inline;
+  }
+   .coupon-container__instruction {
+	font-size: 20px;
+	color: #a94442;
+   }
+	.coupon-container__coupon {
+	font-size: 20px;
+	font-weight: normal;
+	}
+  .footer-container__tip{
+	margin: 5px 0;
   }
 	</style>
 
@@ -47,39 +75,30 @@ body {
   background-repeat: repeat;
   background-position: left top;
 }
-
 .ss-form-container, .ss-resp-card {
   background-color: rgb(255,255,255);
 }
-
 .ss-footer, .ss-response-footer {
   background-color: rgb(255,255,255);
 }
-
 .ss-grid-row-odd {
   background-color: rgb(242,242,242);
 }
-
 .ss-form-container, .ss-resp-card {
   border-color: rgb(194,194,194);
 }
-
 .ss-form-title {
   text-align: center;
 }
-
 .ss-form-title[dir="rtl"] {
   text-align: center;
 }
-
 .ss-form-desc {
   text-align: left;
 }
-
 .ss-form-desc[dir="rtl"] {
   text-align: right;
 }
-
 .ss-header-image-container {
   height: auto;
   text-align: center;
@@ -87,25 +106,20 @@ body {
   margin-left: 3.000rem;
   margin-right: 3.000rem;
 }
-
 .ss-header-image-image {
   background-image: url('https://lh6.googleusercontent.com/LuNF-1pDIYFpADbLm_4a-0gd88_nn-ZR9EzIKIfY6glUlrqlG0WxGhlZCYrdtAViD_Ep8g');
   max-width: 3937px;
   max-height: 1140px;
 }
-
 .ss-header-image-sizer {
   padding-top: 28.956%;
 }
-
 .ss-item {
   font-size: 1.080rem;
 }
-
 .ss-choices {
   font-size: 1.000rem;
 }
-
 body {
   font-family: "Raleway";
   color: rgb(100,100,100);
@@ -113,7 +127,6 @@ body {
   font-size: 1.250rem;
   font-style: normal;
 }
-
 .ss-record-username-message {
   font-family: "Raleway";
   color: rgb(100,100,100);
@@ -121,7 +134,6 @@ body {
   font-size: 1.250rem;
   font-style: normal;
 }
-
 .ss-form-title {
   font-family: "Oleo Script";
   color: rgb(183,225,19);
@@ -129,7 +141,6 @@ body {
   font-size: 2.460rem;
   font-style: normal;
 }
-
 .ss-confirmation {
   font-family: "Oleo Script";
   color: rgb(35,148,0);
@@ -137,7 +148,6 @@ body {
   font-size: 2.460rem;
   font-style: normal;
 }
-
 .ss-page-title, .ss-section-title {
   font-family: "Oleo Script";
   color: rgb(183,225,19);
@@ -145,7 +155,6 @@ body {
   font-size: 1.845rem;
   font-style: normal;
 }
-
 .ss-form-desc, .ss-page-description, .ss-section-description {
   font-family: "Raleway";
   color: rgb(100,100,100);
@@ -153,7 +162,6 @@ body {
   font-size: 1.250rem;
   font-style: normal;
 }
-
 .ss-resp-content {
   font-family: "Raleway";
   color: rgb(100,100,100);
@@ -161,7 +169,6 @@ body {
   font-size: 1.250rem;
   font-style: normal;
 }
-
 .ss-q-title {
   font-family: "Raleway";
   color: rgb(100,150,190);
@@ -169,7 +176,6 @@ body {
   font-size: 1.080rem;
   font-style: normal;
 }
-
 .ss-embeddable-object-container .ss-q-title {
   font-family: "Raleway";
   color: rgb(100,150,190);
@@ -177,7 +183,6 @@ body {
   font-size: 1.845rem;
   font-style: normal;
 }
-
 .ss-q-help, .ss-q-time-hint {
   font-family: "Roboto";
   color: rgb(132,132,132);
@@ -185,7 +190,6 @@ body {
   font-size: 1.000rem;
   font-style: normal;
 }
-
 .ss-choice-label, .video-secondary-text, .ss-gridrow-leftlabel, .ss-gridnumber, .ss-scalenumber, .ss-leftlabel, .ss-rightlabel {
   font-family: "Roboto";
   color: rgb(140,140,140);
@@ -193,7 +197,6 @@ body {
   font-size: 1.000rem;
   font-style: normal;
 }
-
 .error-message, .required-message, .ss-required-asterisk {
   font-family: "Roboto";
   color: rgb(196,59,29);
@@ -201,7 +204,6 @@ body {
   font-size: 1.000rem;
   font-style: normal;
 }
-
 .ss-send-email-receipt {
   font-family: "Raleway";
   color: rgb(47,125,173);
@@ -209,7 +211,6 @@ body {
   font-size: 1.000rem;
   font-style: normal;
 }
-
 .ss-password-warning {
   font-family: "Arial";
   color: rgb(119,119,119);
@@ -217,7 +218,6 @@ body {
   font-size: 1.000rem;
   font-style: italic;
 }
-
 .disclaimer {
   font-family: "Arial";
   color: rgb(119,119,119);
@@ -225,7 +225,6 @@ body {
   font-size: 0.850rem;
   font-style: normal;
 }
-
 .ss-footer-content {
   font-family: "Arial";
   color: rgb(119,119,119);
@@ -233,7 +232,6 @@ body {
   font-size: 1.000rem;
   font-style: normal;
 }
-
 .progress-label {
   font-family: "Roboto";
   color: rgb(132,132,132);
@@ -241,44 +239,35 @@ body {
   font-size: 1.000rem;
   font-style: normal;
 }
-
 a:link {
   color: rgb(0,0,238);
 }
-
 a:visited {
   color: rgb(85,26,139);
 }
-
 a:active {
   color: rgb(252,0,0);
 }
-
 input[type='text'], input:not([type]), textarea {
   font-size: 1.000rem;
 }
-
 .error, .required, .errorbox-bad {
   border-color: rgb(196,59,29);
 }
-
 .jfk-progressBar-nonBlocking .progress-bar-thumb {
   background-color: rgb(132,132,132);
 }
-
 .ss-logo-image {
   background-image: url('https://docs.google.com//ssl.gstatic.com/docs/forms/forms_logo_small_dark.png');
   background-size: 108px 21px;
   width: 108px;
   height: 21px;
 }
-
 @media screen and (-webkit-device-pixel-ratio: 2) {
 .ss-logo-image {
   background-image: url('https://docs.google.com//ssl.gstatic.com/docs/forms/forms_logo_small_dark_2x.png');
 }
 }
-
 </style>
 
 
@@ -315,7 +304,6 @@ input[type='text'], input:not([type]), textarea {
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 (function(e,t){"function"==typeof define&&define.amd?define(t):"object"==typeof module&&module.exports?module.exports=t():e.H5F=t()})(this,function(){var e,t,a,i,n,r,l,s,o,u,d,c,v,p,f,m,b,h,g,y,w,C,N,A,E,$,x=document,k=x.createElement("input"),q=/^[a-zA-Z0-9.!#$%&'*+-\/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,M=/[a-z][\-\.+a-z]*:\/\//i,L=/^(input|select|textarea)$/i;return r=function(e,t){var a=!e.nodeType||!1,i={validClass:"valid",invalidClass:"error",requiredClass:"required",placeholderClass:"placeholder",onSubmit:Function.prototype,onInvalid:Function.prototype};if("object"==typeof t)for(var r in i)t[r]===void 0&&(t[r]=i[r]);if(n=t||i,a)for(var s=0,o=e.length;o>s;s++)l(e[s]);else l(e)},l=function(a){var i,r=a.elements,l=r.length,c=!!a.attributes.novalidate;if(g(a,"invalid",o,!0),g(a,"blur",o,!0),g(a,"input",o,!0),g(a,"keyup",o,!0),g(a,"focus",o,!0),g(a,"change",o,!0),g(a,"click",u,!0),g(a,"submit",function(i){return e=!0,t||c||a.checkValidity()?(n.onSubmit.call(a,i),void 0):(w(i),void 0)},!1),!v())for(a.checkValidity=function(){return d(a)};l--;)i=!!r[l].attributes.required,"fieldset"!==r[l].nodeName.toLowerCase()&&s(r[l])},s=function(e){var t=e,a=h(t),n={type:t.getAttribute("type"),pattern:t.getAttribute("pattern"),placeholder:t.getAttribute("placeholder")},r=/^(email|url)$/i,l=/^(input|keyup)$/i,s=r.test(n.type)?n.type:n.pattern?n.pattern:!1,o=p(t,s),u=m(t,"step"),v=m(t,"min"),b=m(t,"max"),g=!(""===t.validationMessage||void 0===t.validationMessage);t.checkValidity=function(){return d.call(this,t)},t.setCustomValidity=function(e){c.call(t,e)},t.validity={valueMissing:a,patternMismatch:o,rangeUnderflow:v,rangeOverflow:b,stepMismatch:u,customError:g,valid:!(a||o||u||v||b||g)},n.placeholder&&!l.test(i)&&f(t)},o=function(e){var t=C(e)||e,a=/^(input|keyup|focusin|focus|change)$/i,r=/^(submit|image|button|reset)$/i,l=/^(checkbox|radio)$/i,u=!0;!L.test(t.nodeName)||r.test(t.type)||r.test(t.nodeName)||(i=e.type,v()||s(t),t.validity.valid&&(""!==t.value||l.test(t.type))||t.value!==t.getAttribute("placeholder")&&t.validity.valid?(A(t,[n.invalidClass,n.requiredClass]),N(t,n.validClass)):a.test(i)?t.validity.valueMissing&&A(t,[n.requiredClass,n.invalidClass,n.validClass]):t.validity.valueMissing?(A(t,[n.invalidClass,n.validClass]),N(t,n.requiredClass)):t.validity.valid||(A(t,[n.validClass,n.requiredClass]),N(t,n.invalidClass)),"input"===i&&u&&(y(t.form,"keyup",o,!0),u=!1))},d=function(t){var a,i,r,l,s,u=!1;if("form"===t.nodeName.toLowerCase()){a=t.elements;for(var d=0,c=a.length;c>d;d++)i=a[d],r=!!i.attributes.disabled,l=!!i.attributes.required,s=!!i.attributes.pattern,"fieldset"!==i.nodeName.toLowerCase()&&!r&&(l||s&&l)&&(o(i),i.validity.valid||u||(e&&i.focus(),u=!0,n.onInvalid.call(t,i)));return!u}return o(t),t.validity.valid},c=function(e){var t=this;t.validationMessage=e},u=function(e){var a=C(e);a.attributes.formnovalidate&&"submit"===a.type&&(t=!0)},v=function(){return E(k,"validity")&&E(k,"checkValidity")},p=function(e,t){if("email"===t)return!q.test(e.value);if("url"===t)return!M.test(e.value);if(t){var i=e.getAttribute("placeholder"),n=e.value;return a=RegExp("^(?:"+t+")$"),n===i?!1:""===n?!1:!a.test(e.value)}return!1},f=function(e){var t={placeholder:e.getAttribute("placeholder")},a=/^(focus|focusin|submit)$/i,r=/^(input|textarea)$/i,l=/^password$/i,s=!!("placeholder"in k);s||!r.test(e.nodeName)||l.test(e.type)||(""!==e.value||a.test(i)?e.value===t.placeholder&&a.test(i)&&(e.value="",A(e,n.placeholderClass)):(e.value=t.placeholder,g(e.form,"submit",function(){i="submit",f(e)},!0),N(e,n.placeholderClass)))},m=function(e,t){var a=parseInt(e.getAttribute("min"),10)||0,i=parseInt(e.getAttribute("max"),10)||!1,n=parseInt(e.getAttribute("step"),10)||1,r=parseInt(e.value,10),l=(r-a)%n;return h(e)||isNaN(r)?"number"===e.getAttribute("type")?!0:!1:"step"===t?e.getAttribute("step")?0!==l:!1:"min"===t?e.getAttribute("min")?a>r:!1:"max"===t?e.getAttribute("max")?r>i:!1:void 0},b=function(e){var t=!!e.attributes.required;return t?h(e):!1},h=function(e){var t=e.getAttribute("placeholder"),a=/^(checkbox|radio)$/i,i=!!e.attributes.required;return!(!i||""!==e.value&&e.value!==t&&(!a.test(e.type)||$(e)))},g=function(e,t,a,i){E(window,"addEventListener")?e.addEventListener(t,a,i):E(window,"attachEvent")&&window.event!==void 0&&("blur"===t?t="focusout":"focus"===t&&(t="focusin"),e.attachEvent("on"+t,a))},y=function(e,t,a,i){E(window,"removeEventListener")?e.removeEventListener(t,a,i):E(window,"detachEvent")&&window.event!==void 0&&e.detachEvent("on"+t,a)},w=function(e){e=e||window.event,e.stopPropagation&&e.preventDefault?(e.stopPropagation(),e.preventDefault()):(e.cancelBubble=!0,e.returnValue=!1)},C=function(e){return e=e||window.event,e.target||e.srcElement},N=function(e,t){var a;e.className?(a=RegExp("(^|\\s)"+t+"(\\s|$)"),a.test(e.className)||(e.className+=" "+t)):e.className=t},A=function(e,t){var a,i,n="object"==typeof t?t.length:1,r=n;if(e.className)if(e.className===t)e.className="";else for(;n--;)a=RegExp("(^|\\s)"+(r>1?t[n]:t)+"(\\s|$)"),i=e.className.match(a),i&&3===i.length&&(e.className=e.className.replace(a,i[1]&&i[2]?" ":""))},E=function(e,t){var a=typeof e[t],i=RegExp("^function|object$","i");return!!(i.test(a)&&e[t]||"unknown"===a)},$=function(e){for(var t=document.getElementsByName(e.name),a=0;t.length>a;a++)if(t[a].checked)return!0;return!1},{setup:r}});
-
         </script>
 <link rel="alternate" type="text/xml+oembed" href="https://docs.google.com/forms/d/1-BMLjyq9RFsfRWH6WTtoXL0hIhD-L_72sqePZoswliE/oembed?url=https://docs.google.com/forms/d/1-BMLjyq9RFsfRWH6WTtoXL0hIhD-L_72sqePZoswliE/viewform&amp;format=xml">
 
@@ -338,52 +326,38 @@ input[type='text'], input:not([type]), textarea {
 
 		<div class="main-container">
 			<div class="row">
-			<!-- left image and description container -->
-			<div class="col-xs-5">
-				<img class="main-container__img" src="http://ecx.images-amazon.com/images/I/81-8WA-cEOL._SX425_.jpg">
-				<p></p>
-				<p>
-					G & F Micro form nitrile coating garden gloves offers 60% Nylon shell, 40% Nitrile coating, 3/4 coating covering most of the hand,Ultra Cool and Very Comfortable to Wear, Breathable Coating Keeps Hands Cool and Dry. Fits like second skin, wear like leather.  
-				</p>
-			</div>
+				<!-- left image and description container -->
+				<div class="col-xs-5">
+					<img class="main-container__img" src="http://ecx.images-amazon.com/images/I/81-8WA-cEOL._SX425_.jpg">
+				</div>
 
-			<!-- right instruction container-->
-			<div class="col-xs-7">
-				<div class="instruction-container">
-					<p class="instruction-container__title1">How to redeem:</p>
-					<ul>
-						<li>
-							Event Duration:  12 Hours (12:00 pm - 11:59 pm EST 4/24/2015)(Redeem it before its gone for good)
-						</li>
-						<li>
-							The coupon code can only work Once 
-						</li>
-						<li>
-							Please enter the Coupon Code during "Choose Payment Method" Step at Check out and click Apply, you should see your "Order Total" reflects to $0.00 before using a credit card. 
-						</li>
-					</ul>
-				</div>
-				<div class="instruction-container">
-					<p class="instruction-container__title2">MUST READ: </p>
-					<p class="instruction-container__subtitle2">By redeeming this product for free, Members are committed to:</p>
-					<ul class="">
-						<li >
-							Write an Honest and Unbiased Product Review on Amazon.com Within 10 Days Upon Receiving the Free Product.
-						</li>
-						<li>
-							Not Doing So Will Cause Your FreebaQ Account to be Suspended.
-						</li>
-						<li>
-							Do NOT Change Your Amazon Account Name, Otherwise We CANNOT Match Your Review to Your FreebaQ Account, which could Result in You Being Removed from Our Community.
-						</li>
-						<li>
-							In Your Review, Please Disclose Below Sentence: "This product review is based on the practical use of a complimentary copy of the product itself in the form of honesty and most accurate opinion to the best of my knowledge." 
-						</li>
-					</ul>
+				<!-- right description container-->
+				<div class="col-xs-7">
+					<div class="description-container">
+						<p class="description-container__title1">Yours FREE today</p>
+						<ul>
+							<li>60% Nylon shell, 40% Nitrile coating, 3/4 coating covering most of the hand</li>
+							<li>Ultra Cool and Very Comfortable to Wear, Breathable Coating Keeps Hands Cool and Dry</li>
+							<li>The Ultimate in Super Light Breathable Ultra fine Micro-Foam Nitrile Dipped Nylon Gloves</li>
+							<li>Fits like second skin, wear like leather</li>
+							<li>Sold by 3 pair pack</li>
+					</div>
 				</div>
 			</div>
-		</div>
-		</div>
+			<div class="row">
+					<p class="description-container__title1">How to redeem:</p>
+						<ul>
+							<li>
+								Event Duration:  12 Hours (12:00 pm - 11:59 pm EST 4/24/2015)(Redeem it before its gone for good)
+							</li>
+							<li>
+								The coupon code can only work Once 
+							</li>
+							<li>
+								Please enter the Coupon Code during "Choose Payment Method" Step at Check out and click Apply, you should see your "Order Total" reflects to $0.00 before using a credit card. 
+							</li>
+						</ul>
+			</div>
 
 		<!-- one line fill form instruction -->
 		<div class="instruction-fill-form row">
@@ -548,8 +522,43 @@ input[type='text'], input:not([type]), textarea {
   </script>
 </div>
 			<!-- for google form -->
+		</div> 
+	</div>
+	<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Congratulations, you've successfully signed up for this special offer! </h4>
+      </div>
+      <div class="modal-body">
+        <div>
+			<span class="coupon-container__instruction"> Here is your coupon code: </span>
+			<span class="label label-primary coupon-container__coupon">94JY-896BEY-P8SR4J</span>
+			</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary"><a href="http://www.amazon.com/garden-gloves-Nitrile-coating-texture/dp/B0007YZ42I/ref=sr_1_7?m=AE3L8DO5YKOR4&s=merchant-items&ie=UTF8&qid=1430517713&sr=1-7" target="_blank">Go to Amazon</a></button>
+        <div>please visit our <a href=" http://www.freebaq.com/faq.html">FAQ page </a> if you have any questions</div>
+	  </div>
+    </div>
+  </div>
+</div>
+	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    Launch demo modal
+   </button>
+	<div class="row footer-container">
+		<div class="col-xs-1">
+			<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fhttp://www.gloryjourney.com/&amp;layout=button_count&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp" style="overflow:hidden;width:100%;height:80px;" scrolling="no" frameborder="0" allowTransparency="true"><a href="http://www.addlikebutton.net" class="fbook">test</a></iframe>
 		</div>
-
+		<div class="col-xs-1">
+			<img class="footer-container__img" src="FreebaQ.png">
+		</div>
+		<div class="col-xs-10 footer-container__tip">
+        For general FAQ on Membership, how to use coupon code, how to write review. please visit our <a href=" http://www.freebaq.com/faq.html">FAQ page </a>
+		</div>
+	</div>
 	</div>
 </body>
 </html>
